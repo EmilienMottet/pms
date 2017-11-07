@@ -31,8 +31,8 @@ data <- c(54.8,55.4,57.7,59.6,60.1,61.2,62.0,63.1,63.5,64.2,
 65.2,65.4,65.9,66.0,67.6,68.1,69.5,70.6,71.5,73.4)
 
 # compareUnif(data)
-compareNorm(data)
-# compareExp(data)
+# compareNorm(data)
+compareExp(data)
 
 
 # page 25 en bas

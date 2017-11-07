@@ -1,2 +1,2 @@
 MyData <- read.csv(file="c:/TheDataIWantToReadIn.csv", header=TRUE, sep=",")
-
+mydata <- read.csv(file="~/Documents/Cours/Stats/dataDS.csv", header=FALSE)$V1

@@ -20,11 +20,12 @@ createHistogram <- function(n){
     lines(density(val))
 }
 
+
+
 createHistogramEffectif <- function(n){
     val <- sort(runif(n))
 
     sturges <- 1 + log2(n)
-
 
     ifelse(sturges < 5, sturges <- 5, ifelse(sturges > 20 , sturges <- 20, sturges <- round(sturges)))
 
@@ -54,6 +55,6 @@ createHistogramEffectif <- function(n){
     lines(abs,res$density[-length(res$density)])
 }
 
-createHistogramEffectif(20)
-# createHistogram(1000)
+# createHistogramEffectif(20)
+createHistogram(1000)
 
