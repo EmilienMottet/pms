@@ -3,6 +3,7 @@
 # Created by: emilien
 # Created on: 06/11/17
 # https://www.agroparistech.fr/IMG/pdf/Simul-VA.pdf
+# https://www.agroparistech.fr/IMG/pdf/Simul-VA.pdf
 
 sturges  <- function(lenData){
     sturges = 1 + log2(lenData)
@@ -79,4 +80,7 @@ mydata <- read.csv(file="~/Documents/Cours/Stats/dataDS.csv", header=FALSE)$V1
 # createHistogramSameWid(mydata)
 # createHistogramSameEff(mydata)
 
-compareExp(mydata)
+# compareExp(mydata)
+
+# plot(sort(mydata))
+
