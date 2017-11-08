@@ -94,3 +94,10 @@ mydata <- read.csv(file="~/Documents/Cours/Stats/dataDS.csv", header=FALSE)$V1
 
 # plot(sort(mydata))
 
+# repartition
+eq  <- function(x,l=1){
+    1 - exp(-l*x)
+}
+
+# plot(seq(10),sapply(seq(10),eq),add=TRUE)
+# lines(x = seq(10),y = sapply(seq(10),eq))
