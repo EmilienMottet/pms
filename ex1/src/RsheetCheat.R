@@ -62,6 +62,16 @@ compareExp = function(data) {
     abline(lm(y[-length(data)] ~ x[-length(data)]))
 }
 
+compareExpCustom = function(data) {
+    x <- sort(data)
+    eq <- function(u,p = 1){
+        (-log(1-u))/p
+    }
+    y <- eq(seq(1:length(data))/length(data))
+    plot(x,y)
+    abline(lm(y[-length(data)] ~ x[-length(data)]))
+}
+
 compareNorm = function(data) {
     x <- sort(data)
     y <- qnorm(seq(1:length(data))/length(data))
